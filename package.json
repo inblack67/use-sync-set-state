@@ -32,7 +32,19 @@
     "trailingComma": "es5"
   },
   "name": "use-sync-set-state",
-  "author": "Aman",
+  "author": "Aman Bhardwaj",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inblack67/use-sync-set-state"
+  },
+  "homepage": "https://github.com/inblack67/use-sync-set-state/blob/master/README.md",
+  "keywords": [
+    "react",
+    "localStorage",
+    "useState",
+    "hook",
+    "sync"
+  ],
   "module": "dist/use-sync-set-state.esm.js",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.1",
