@@ -4,7 +4,7 @@
 
 - **use-sync-set-state** is a superset of useState i.e, you can always set the state explicitly or via callback function, your call.
 
-- What's difference is that it stores the state in the localStorage and syncs it between tabs by listening to localStorage's storage event.
+- What's different is that it stores the state in the localStorage and syncs it between tabs by listening to localStorage's storage event.
 
 ### Installation
 
