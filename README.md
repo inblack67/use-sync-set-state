@@ -4,7 +4,7 @@
 
 - **use-sync-set-state** is a superset of useState i.e, you can always set the state explicitly or via callback function, your call.
 
-- What's difference is that it stores the state in the localStorage and syncs it by listening to localStorage's storage event.
+- What's difference is that it stores the state in the localStorage and syncs it between tabs by listening to localStorage's storage event.
 
 ### Installation
 
@@ -32,12 +32,17 @@ const App = () => {
   const [theme, setTheme] = useSyncSetState('theme', 'dark');
 
   return <React.Fragment>
-  <p data-testid='theme'>{ theme }</p>
+
+  <p data-testid='theme'>{ theme }
+  </p>
+
   // changes will be reflected in all the tabs, without reload.
   <button onClick={e => setTheme((current) => current === 'dark' ? 'light' : 'dark')}>toggle</button>
+
   <p data-testid='localstorage'>
     {localStorage.getItem('theme')}
   </p>
+  
   </React.Fragment>
 }
 ```
